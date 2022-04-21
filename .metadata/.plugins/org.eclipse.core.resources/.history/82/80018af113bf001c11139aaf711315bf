@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Calendar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+
+		int allDay = 0, startDay = 0, endDay = 0;
+		int year = 0, month = 0;
+
+		System.out.println("년도를 입력하세요. ");
+		year = scan.nextInt();
+
+		System.out.println("월을 입력하세요. ");
+		month = scan.nextInt();
+
+		for (int i = 1; i < year; i++) {//입력한 년도보다 작년까지의 합이 필요함으로 i < year로 사용
+			allDay += 365;
+			//1년 지날때마다 365씩 더해줌
+			System.out.println(allDay);
+			if ((((i % 4) == 0) && (i % 100) != 0) || ((i % 400) == 0)) {
+				//if문에서 year가 아닌 i를 써주는 이유는 for문에서 1년부터 입력한 year까지의 합을 구해주는 과정이기 때문.
+				//i가 아닌 year를 사용할 경우 1~year까지의 윤년 확인이 아닌 입력받은 year의 윤년 유무만 확인하게 된다.
+				allDay++;
+				//윤년인 경우 2월이 28일에서 29일이 되어 하루가 더 증가하므로 1씩 더해줌
+			}
+		}
+
+		
+		
+		
+	}
+}

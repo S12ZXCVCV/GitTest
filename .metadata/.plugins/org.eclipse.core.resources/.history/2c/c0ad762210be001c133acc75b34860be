@@ -1,0 +1,28 @@
+
+
+class Tv{
+	
+	// tv속성 (맴버변수)
+	String color;
+	boolean power;
+	int channel;
+	
+	// tV의 기능(맴써드)	
+	void power() { power=!power; }
+	void channelUp() {  ++channel; }
+	void channelDown() { --channel; }
+
+}
+public class TvTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    Tv t;              //tv인스턴스를 참조하기 위한 변수 t를 선언
+    t= new Tv();       //tv인스턴스를 생성한다.
+    t.channel = 7;     //tv인스턴스 맴버변수 channel의 값을 7로 한다
+    t.channelDown();   //tv인스턴스의 매써드 channelDown()을 호출한다
+    System.out.println("현재의 채녈은"+t.channel+"입니다");
+    	
+	}
+
+}

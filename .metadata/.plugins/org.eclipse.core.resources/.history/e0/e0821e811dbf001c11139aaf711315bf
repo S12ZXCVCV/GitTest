@@ -1,0 +1,15 @@
+
+public class Ex35 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.printf("1\t월\t화\t수\t목\t금\t토%n");
+		System.out.printf("===============================================%n");
+		
+		
+		
+		}}
+	
+
+

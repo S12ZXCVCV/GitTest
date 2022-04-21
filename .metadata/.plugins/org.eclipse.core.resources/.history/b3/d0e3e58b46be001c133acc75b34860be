@@ -1,0 +1,12 @@
+class Date {int x;)
+public class PrimitiveParamEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     Date d = new Date();
+     d.x =10 ;
+     sysout
+     
+	}
+
+}

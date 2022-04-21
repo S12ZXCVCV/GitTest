@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Calendar {
+
+	public static void main(String[] args) {
+		
+		int[] monthArr = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+		int week=6 , i=0 , month=3;
+		System.out.printf("%s\t%s\t%s\t%s\t%s\t%s\t%s\t%n", "일", "월", "화", "수", "목", "금", "토");
+		System.out.println("--------------------------------------------------");
+		for (i = 0; i < 6; i++) {
+			System.out.print("\t");
+			
+		}
+		for(i = 1; i <= monthArr[month - 1]; i++) {
+			System.out.printf("%2d\t", i);
+			week++;
+			
+			if(week % 7 == 0)
+				System.out.println("");
+			
+		}
+		if(7 % 7 != 0)
+			System.out.println("");
+			
+		
+	}//end of main
+
+}

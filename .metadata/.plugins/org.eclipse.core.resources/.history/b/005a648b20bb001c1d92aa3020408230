@@ -1,0 +1,32 @@
+import java.util.Arrays;
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	 
+		
+		String[] names = {"Kim","Park","Yi","Yu"};
+		
+		for(int i=0 ; i< names.length ; i++)
+		
+		System.out.printf("names[%d]:"+names[i],i);
+		
+		String tmp = names[2];
+		
+		System.out.printf(tmp);
+		
+		names[1]=tmp;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}}

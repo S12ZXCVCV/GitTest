@@ -1,0 +1,15 @@
+
+public class Ex35 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.printf("1\t2\t3\t4\t5%n");
+		System.out.printf("==================================%n");
+		
+		
+		
+		}}
+	
+
+

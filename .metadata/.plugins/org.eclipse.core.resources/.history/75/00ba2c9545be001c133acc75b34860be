@@ -1,0 +1,32 @@
+
+
+class Tv{
+	
+	// tv속성 (맴버변수)
+	String color;
+	boolean power;
+	int channel;
+	
+	// tV의 기능(맴써드)	
+	void power() { power=!power; }
+	void channelUp() {  ++channel; }
+	void channelDown() { --channel; }
+
+}
+public class TvTest4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    Tv[] tvArr = new Tv[3];
+    
+    for(int i=0 ; i< tvArr.length ; i++) {
+    	tvArr[i]= new Tv();
+    	tvArr[i].channel=i+10; // tvArr[i]의 channel에 i+10을저장
+    }
+    for(int i=0; i< tvArr.length; i++) {
+    	tvArr[i].channelUp(); //tvArr[i]의 매써드 호출,채널이 1증가
+    	System.out.printf("tvArr[%d].channel=%d%n",i,tvArr[i].channel);
+    }
+	}
+
+}

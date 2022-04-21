@@ -1,0 +1,15 @@
+
+
+
+public class CallStackTest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    firstMethod();
+	}
+	static void firstMethod() {
+	scecondMethod();}
+	static void scecondMethod() {
+	System.out.println("scecondMethod()");	
+	}
+}

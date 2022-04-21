@@ -1,0 +1,34 @@
+
+public class Ex16 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+	int[][] score = {{100,100,100},
+			{20,20,20},
+			{30,30,30},
+			{40,40,40},
+			{50,50,50}};
+	
+	System.out.println("번호 국어 영어 수학 총점 평균");
+	System.out.println("===================================");
+	
+	for(int i=0; i<score.length ; i++) {
+		int sum=0;
+		for(int j=0; j<score[i].length ; j++) {
+		  //sum +=  score[i][j];
+	System.out.printf("%5d",score[i][j]);	
+	}}
+		
+	
+	
+	
+	
+	
+	System.out.println("===================================");
+	
+	
+	
+	
+	
+}}

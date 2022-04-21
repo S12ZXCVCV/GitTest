@@ -1,0 +1,29 @@
+import java.util.Arrays;
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	 
+		
+		String source = "SOSHELP";
+		String[] morse= {".-","-..","-.-"};
+		
+		String result="";
+		
+		for(int i=0; i< morse.length; i++) {
+			result+=morse[source.charAt(i)-'A'];
+			}
+		System.out.println("morse:"+result);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}}
